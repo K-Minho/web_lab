@@ -1,0 +1,23 @@
+package controller;
+
+import config.Model;
+import model.UserRepository;
+
+public class UserController {
+
+	private UserRepository userRepository;
+		
+	public UserController(UserRepository userRepository) {
+		this.userRepository = userRepository;
+	}
+	
+	public String insert() {
+		System.out.println("insert");
+		return "user/list";
+	}
+	public String findById(Model model) {
+		System.out.println("findById");
+		userRepository.findById(1);
+		return "user/userInfo";
+	}
+}

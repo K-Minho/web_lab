@@ -1,0 +1,21 @@
+package model;
+
+public class UserRepository {
+	public User join() {
+		return null;
+	}
+	
+	public User userinfo() {
+		return null;
+	}
+	
+	// dummy
+	private User newUser(int id) {
+		User user = new User();
+		user.setId(id);
+		user.setUsername("user"+ id );
+		user.setPassword("password" + id);
+		user.setEmail("user"+id+"@email.com");
+		return user;
+	}
+}

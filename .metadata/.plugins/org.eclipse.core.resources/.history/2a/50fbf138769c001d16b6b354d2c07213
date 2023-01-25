@@ -1,0 +1,13 @@
+package controller;
+
+public class BoardController {
+	public String findAll() {
+		System.out.println("findAll");
+		return "board/list";
+	}
+	public String findById() {
+		System.out.println("findById");
+		return "board/detail";
+	}
+
+}

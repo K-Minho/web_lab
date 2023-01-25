@@ -1,0 +1,22 @@
+package controller;
+
+import model.BoardRepository;
+
+public class BoardController {
+	
+	private final BoardRepository boardRepository;
+	
+	public BoardController(BoardRepository boardRepository) {
+		this.boardRepository = boardRepository;
+	}
+	
+	public String findAll() {
+		System.out.println("findAll");
+		return "board/list";
+	}
+	public String findById() {
+		System.out.println("findById");
+		return "board/detail";
+	}
+
+}

@@ -1,0 +1,41 @@
+package web2;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/*
+ * localhost:8080/web2/home
+ */
+
+@WebServlet("*.do")
+public class FrontController extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println(req.getRequestURI());
+		
+		String path = req.getRequestURI();
+		if (path.equals("/web2/a.do")) {
+			resp.sendRedirect("a.jsp");
+		}
+		else if (path.equals("/web2/b.do")) {
+			resp.sendRedirect("b.jsp");
+		}
+		else if (path.equals("/web2/c.do")) {
+			resp.sendRedirect("c.jsp");
+		}
+		else if (path.equals("/web2/d.do")) {
+			resp.sendRedirect("d.jsp");
+		}
+		else {
+			req.setAttribute("name", "anmi");
+			resp.sendRedirect("home.jsp");
+		}
+		
+		MyProcess.init();
+	}
+}

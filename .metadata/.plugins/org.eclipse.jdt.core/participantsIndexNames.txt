@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+D:\dev\neweclipse\web_lab\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2207654456.index
+\web1\src\main\java
+D:\dev\neweclipse\web_lab\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3965759598.index
+\web3\src\main\java
+D:\dev\neweclipse\web_lab\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3490478524.index
+\web2\src\main\java
+D:\dev\neweclipse\web_lab\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4248661322.index
+\web3\src\main\java

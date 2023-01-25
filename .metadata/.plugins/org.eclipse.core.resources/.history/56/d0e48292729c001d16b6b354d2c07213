@@ -1,0 +1,12 @@
+package controller;
+
+public class UserController {
+	public String insert() {
+		System.out.println("insert");
+		return "/WEB-INF/views/user/list.jsp";
+	}
+	public String findById(Model model) {
+		System.out.println("findById");
+		return "/WEB-INF/views/user/userInfo.jsp";
+	}
+}

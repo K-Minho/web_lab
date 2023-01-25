@@ -1,0 +1,24 @@
+package config;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/*
+ * localhost:8080/user/join.do
+ * localhost:8080/user/userinfo.do
+ * localhost:8080/user/findAll.do
+ * localhost:8080/user/findById.do
+ */
+
+@WebServlet("*.do")
+public class DispatcherServlet extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+	}
+}

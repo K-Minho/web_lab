@@ -1,0 +1,10 @@
+package controller;
+
+public class UserController {
+	public void insert() {
+		System.out.println("insert");
+	}
+	public void findById() {
+		System.out.println("findById");
+	}
+}

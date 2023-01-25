@@ -1,0 +1,11 @@
+package model;
+
+public class BoardRepository {
+	public List<Board> findAll(){
+		return null;
+	}
+	
+	public Board findbById(){
+		return null;
+	}
+}

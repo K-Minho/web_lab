@@ -1,0 +1,30 @@
+package config;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/*
+ * http://localhost:8080/web3/user/insert.do
+ * http://localhost:8080/web3/user/findById.do
+ * http://localhost:8080/web3/board/findAll.do
+ * http://localhost:8080/web3/board/findById.do
+ */
+
+@WebServlet("*.do")
+public class DispatcherServlet extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String path = req.getRequestURI().substring(1).split("/")[1];
+		String action = req.getRequestURI().substring(1).split("/")[2].replace(".do", "");
+		
+		System.out.println(path);
+		System.out.println(action);
+		
+		
+	}
+}

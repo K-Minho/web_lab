@@ -1,0 +1,25 @@
+package controller;
+
+import config.Model;
+import model.User;
+import model.UserRepository;
+
+public class UserController {
+
+	private UserRepository userRepository;
+		
+	public UserController(UserRepository userRepository) {
+		this.userRepository = userRepository;
+	}
+	
+	public String insert() {
+		System.out.println("insert");
+		return "<script>  alert('insert ok'); location.href='/board/list.jsp'; </script>";
+	}
+	public String findById(Model model) {
+		System.out.println("findById");
+		User user = userRepository.findById(1);
+		model.addAttribute("user", user);
+		return "user/userInfo";
+	}
+}
